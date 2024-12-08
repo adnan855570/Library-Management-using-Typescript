@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets the character encoding of the document to UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures compatibility mode is not triggered in IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport to ensure the page is responsive on all devices -->
+    <title>Library Records Management</title> <!-- Title of the page displayed in the browser tab -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file for styling -->
+</head>
+<body>
+    <h1>Library Records Management</h1> <!-- Main heading of the application -->
+
+    <!-- Unordered list to display the current list of books -->
+    <ul id="bookList"></ul>
+
+    <!-- Main section containing all the forms for managing book records -->
+    <div class="form-section">
+        <!-- Form to add a new book to the library -->
+        <h2>Add Book:</h2>
+        <form id="addBookForm">
+            <input type="text" id="addBookId" placeholder="Enter book id" required> <!-- Input for book ID -->
+            <input type="text" id="addBookName" placeholder="Enter book name" required> <!-- Input for book name -->
+            <input type="text" id="addBookAuthor" placeholder="Enter book author" required> <!-- Input for book author -->
+            <input type="text" id="addBookEdition" placeholder="Enter edition" required> <!-- Input for book edition -->
+            <button type="submit">Add book</button> <!-- Submit button to add the book -->
+        </form>
+
+        <!-- Form to update an existing book's details -->
+        <h2>Update Book:</h2>
+        <form id="updateBookForm">
+            <input type="text" id="updateBookId" placeholder="Enter book id you want to update" required> <!-- Input for the ID of the book to update -->
+            <input type="text" id="updateBookName" placeholder="Enter new book name"> <!-- Input for new book name (optional) -->
+            <input type="text" id="updateBookAuthor" placeholder="Enter new book author"> <!-- Input for new author (optional) -->
+            <input type="text" id="updateBookEdition" placeholder="Enter new edition"> <!-- Input for new edition (optional) -->
+            <button type="submit">Update book</button> <!-- Submit button to update the book -->
+        </form>
+
+        <!-- Form to search for a book by its name -->
+        <h2>Search Book:</h2>
+        <form id="searchBookForm">
+            <input type="text" id="searchBookName" placeholder="Enter book name" required> <!-- Input for the name of the book to search for -->
+            <button type="submit">Search book</button> <!-- Submit button to search for the book -->
+        </form>
+        <!-- Display the search results -->
+        <p>Author: <span id="searchAuthor"></span></p> <!-- Displays the author of the searched book -->
+        <p>Edition: <span id="searchEdition"></span></p> <!-- Displays the edition of the searched book -->
+
+        <!-- Form to delete a book by its name -->
+        <h2>Delete Book:</h2>
+        <form id="deleteBookForm">
+            <input type="text" id="deleteBookName" placeholder="Enter book name you want to delete" required> <!-- Input for the name of the book to delete -->
+            <button type="submit">Delete book</button> <!-- Submit button to delete the book -->
+        </form>
+    </div>
+
+    <!-- Link to the compiled JavaScript file that contains the functionality for managing book records -->
+    <script src="dist/index.js"></script>
+</body>
+</html>

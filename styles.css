@@ -1,0 +1,63 @@
+/* Applies global styles to the entire body of the document */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean, readable font for the whole document */
+    padding: 20px;                 /* Adds padding around the content for better spacing */
+    margin: 0;                     /* Removes the default margin to align content to the edges */
+}
+
+/* Styles for the main and section headings */
+h1, h2 {
+    color: #333; /* Sets a dark gray color for the headings to make them stand out */
+}
+
+/* Styles the container that holds all form sections */
+.form-section {
+    display: flex;                /* Uses Flexbox to lay out child elements */
+    flex-direction: column;       /* Aligns child elements vertically */
+    gap: 20px;                    /* Adds space between each form section */
+    max-width: 400px;             /* Limits the width of the form section to 400 pixels for readability */
+    margin: 0 auto;               /* Centers the form section horizontally on the page */
+}
+
+/* Styles for all forms within the .form-section */
+form {
+    display: flex;                /* Uses Flexbox for form layout */
+    flex-direction: column;       /* Stacks form inputs and buttons vertically */
+    gap: 10px;                    /* Adds space between each input and button within the form */
+}
+
+/* Styles for the input fields */
+input {
+    padding: 8px;                 /* Adds padding inside the input fields for better spacing */
+    border: 1px solid #ccc;       /* Sets a light gray border around the inputs */
+    border-radius: 4px;           /* Rounds the corners of the inputs for a softer look */
+}
+
+/* Styles for the buttons within the forms */
+button {
+    padding: 10px;                /* Adds padding inside the button for a comfortable click area */
+    background-color: #4CAF50;    /* Sets the background color to a shade of green */
+    color: white;                 /* Sets the text color to white for contrast */
+    border: none;                 /* Removes the default border */
+    border-radius: 4px;           /* Rounds the corners of the button */
+    cursor: pointer;              /* Changes the cursor to a pointer on hover, indicating it's clickable */
+}
+
+/* Button hover effect for better user interaction feedback */
+button:hover {
+    background-color: #45a049;    /* Changes the button color slightly on hover */
+}
+
+/* Styles for the book list */
+#bookList {
+    list-style-type: none;        /* Removes the default bullet points from the list */
+    padding: 0;                   /* Removes the default padding */
+    margin-bottom: 20px;          /* Adds space below the list */
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .form-section {
+        width: 100%;              /* Ensures the form section takes the full width on smaller screens */
+    }
+}
